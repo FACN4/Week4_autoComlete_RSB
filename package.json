@@ -1,0 +1,23 @@
+{
+  "name": "week4_autocomplete_rsb",
+  "version": "1.0.0",
+  "description": "this is an autocomplete website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FACN4/Week4_autoComlete_RSB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FACN4/Week4_autoComlete_RSB/issues"
+  },
+  "homepage": "https://github.com/FACN4/Week4_autoComlete_RSB#readme",
+  "devDependencies": {
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1"
+  }
+}
