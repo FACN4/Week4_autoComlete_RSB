@@ -11,7 +11,6 @@ const staticHandler = (response, filepath) => {
     svg: "image/svg+xml"
   };
   fs.readFile(path.join(__dirname, "..", filepath), "utf8", (error, file) => {
-    console.log();
     if (error) {
       response.writeHead(500, { "content-type": "text/plain" });
       response.end("server error");
