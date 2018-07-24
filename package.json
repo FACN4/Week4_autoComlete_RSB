@@ -4,7 +4,7 @@
   "description": "this is an autocomplete website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tape ./src/test/js | tap-spec"
   },
   "repository": {
     "type": "git",
