@@ -12,6 +12,7 @@ const staticHandler = (response, filepath) => {
   };
   fs.readFile(path.join(__dirname, "..", filepath), "utf8", (error, file) => {
     if (error) {
+      console.log(error);
       response.writeHead(500, { "content-type": "text/plain" });
       response.end("server error");
     } else {
