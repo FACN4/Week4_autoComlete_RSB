@@ -11,7 +11,7 @@ body {
       font-weight: bolder;
       font-size:10px;
       background-position: center;
-      margin : 0px 90px 0px 90px;
+      margin : 0px 40px 0px 40px;
 
   }
 
@@ -19,7 +19,7 @@ body {
 div {
       display: flex;
       justify-content:center;
-      padding-top : 70px ;
+      padding-top : 40px ;
       }
 
 #inputBox{
@@ -31,6 +31,9 @@ div {
         font-style: normal;
         font-weight: bold;
         color:navy;
+        background-image:url("https://image.shutterstock.com/image-vector/vector-seamless-pattern-paw-footprints-260nw-622830797.jpg");
+        background-blend-mode:multiply;
+        opacity : 10%;
   }
   button{
     font-family: 'Arapey';
