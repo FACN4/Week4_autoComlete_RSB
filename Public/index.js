@@ -1,7 +1,7 @@
 var input = document.getElementById("inputBox");
 input.focus();
 var searchButton = document.getElementById("btn");
-
+var pic = document.getElementById("imgOfDog");
 searchButton.addEventListener("click", function() {
   var selectedBreed = input.value;
   var xhr = new XMLHttpRequest();
@@ -10,6 +10,8 @@ searchButton.addEventListener("click", function() {
     if (xhr.readyState == 4 && xhr.status == 200) {
       var res = JSON.parse(xhr.response);
       console.log(res.message);
+      pic.src= res.message;
+
     }
   };
   xhr.open("GET", apiUrl);
