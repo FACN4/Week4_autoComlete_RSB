@@ -1,3 +1,47 @@
-body{
-  background-color:navy;
-}
+@import url("https://fonts.googleapis.com/css?family=Poiret+One|Arapey");
+
+body {
+      background-image:url("http://www.f-covers.com/cover/funny-dog-4-facebook-cover-timeline-banner-for-fb.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-blend-mode:soft-light;
+      font-family: 'Poiret One', sans-serif;
+      background-color: navy;
+      font-weight: bolder;
+      font-size:10px;
+      background-position: center;
+      margin : 0px 90px 0px 90px;
+
+
+
+  }
+
+
+div {
+      display: flex;
+      justify-content:center;
+      padding-top : 100px ;
+      }
+
+#inputBox{
+        font-family: 'Arapey';
+        width : 240px;
+        height : 27px;
+        border-color: white;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: bold;
+        color:navy;
+  }
+  button{
+    font-family: 'Arapey';
+    border-color: white;
+    font-size: 19px;
+    color : white;
+    text-shadow: 0px 1px 4px black;
+    display : flex;
+    justify-content: space-around;
+    font-style: normal;
+    font-weight:bolder;
+  }
