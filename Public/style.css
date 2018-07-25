@@ -11,7 +11,7 @@ body {
       font-weight: bolder;
       font-size:10px;
       background-position: center;
-      margin : 0px 40px 0px 40px;
+      margin : 40px 40px 0px 40px;
 
   }
 
@@ -52,10 +52,15 @@ div {
     font-family: Caveat;
     font-style: oblique;
   }
+  #imgOfDog{
+    width : 290px;
+    height : 240px;
+  }
+
 @media only screen and (min-width: 600px) {
   section{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        /* display: grid;
+        grid-template-columns: 1fr 1fr 1fr; */
         display : flex;
         justify-content: center;
   }
@@ -65,4 +70,8 @@ div {
   div {
         padding-top : 100px ;
         }
+  #imgOfDog{
+           width : 100%;
+           height:100%;
+      }
 }
