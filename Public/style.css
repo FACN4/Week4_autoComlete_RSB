@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poiret+One|Arapey");
+@import url("https://fonts.googleapis.com/css?family=Poiret+One|Arapey|Caveat");
 
 body {
       background-image:url("http://www.f-covers.com/cover/funny-dog-4-facebook-cover-timeline-banner-for-fb.jpg");
@@ -12,14 +12,14 @@ body {
       font-size:10px;
       background-position: center;
       margin : 0px 90px 0px 90px;
-      
+
   }
 
 
 div {
       display: flex;
       justify-content:center;
-      padding-top : 100px ;
+      padding-top : 70px ;
       }
 
 #inputBox{
@@ -37,9 +37,29 @@ div {
     border-color: white;
     font-size: 19px;
     color : white;
-    text-shadow: 0px 1px 4px black;
+    text-shadow: 1px 2px 4px black  ;
     display : flex;
     justify-content: space-around;
     font-style: normal;
     font-weight:bolder;
   }
+  h{
+    font-size : 35px;
+    color : White;
+    font-family: Caveat;
+    font-style: oblique;
+  }
+@media only screen and (min-width: 600px) {
+  section{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        display : flex;
+        justify-content: center;
+  }
+  h{
+    font-size : 44px;
+  }
+  div {
+        padding-top : 100px ;
+        }
+}
