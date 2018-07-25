@@ -1,17 +1,33 @@
+var imageOf = document.getElementById("imgOfDog");
+if (imageOf.src) {
+  imageOf.setAttribute("style", "display:none");
+}
+
 var input = document.getElementById("inputBox");
-input.focus();
+var selectedBreed = input.value;
 var searchButton = document.getElementById("btn");
 var pic = document.getElementById("imgOfDog");
+
+input.focus();
+
 searchButton.addEventListener("click", function() {
-  var selectedBreed = input.value;
+  selectedBreed = input.value;
+
+  selectedBreed = selectedBreed.trim().toLowerCase();
+
+  if (selectedBreed.indexOf("-") !== -1) {
+    var split = selectedBreed.split("-");
+
+    selectedBreed = split[1] + "-" + split[0];
+  }
   var xhr = new XMLHttpRequest();
   var apiUrl = "https://dog.ceo/api/breed/" + selectedBreed + "/images/random";
   xhr.onreadystatechange = function() {
     if (xhr.readyState == 4 && xhr.status == 200) {
       var res = JSON.parse(xhr.response);
-      console.log(res.message);
-      pic.src= res.message;
 
+      pic.src = res.message;
+      imageOf.setAttribute("style", "display:inline");
     }
   };
   xhr.open("GET", apiUrl);
@@ -55,7 +71,7 @@ input.addEventListener("keyup", function() {
             arr.forEach(function(val) {
               // run on all values and add value then key as an option
               let opt = document.createElement("option");
-              opt.value = val + " " + k;
+              opt.value = val + "-" + k;
               sugg.appendChild(opt);
             });
           }
