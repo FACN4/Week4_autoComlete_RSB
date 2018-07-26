@@ -13,6 +13,7 @@ input.focus();
 searchButton.addEventListener("click", function() {
   selectedBreed = input.value;
 
+
   selectedBreed = selectedBreed.trim().toLowerCase();
 
   if (selectedBreed.indexOf("-") !== -1) {
