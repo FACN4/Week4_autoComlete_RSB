@@ -7,13 +7,7 @@ const router = (request, response) => {
   if (url === "/") {
     handlers.staticHandler(response, "Public/index.html");
   }
-  //  else if (url.indexOf("suggest") !== -1) {
-  //   console.log("suggest router reached");
-  //   handlers.suggestHandler(response, url);
-  // } else if (url.indexOf("search") !== -1) {
-  //   console.log("search router reached");
-  //   handlers.searchHandler(response, url);
-  //}
+
   else if (url.indexOf("Public") !== -1) {
     handlers.staticHandler(response, url);
   } else if (url.indexOf("src/data") !== -1) {

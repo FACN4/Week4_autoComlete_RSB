@@ -30,7 +30,7 @@ div {
         font-size: 19px;
         font-style: normal;
         font-weight: bold;
-        color:navy;
+        /* color:navy; */
         background-image:url("https://image.shutterstock.com/image-vector/vector-seamless-pattern-paw-footprints-260nw-622830797.jpg");
         background-blend-mode:multiply;
         opacity : 10%;
