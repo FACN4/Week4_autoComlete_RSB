@@ -33,7 +33,7 @@ div {
         font-size: 27px;
         font-style: normal;
         font-weight: bold;
-        color:navy;
+        /* color:navy; */
         background-image:url("https://image.shutterstock.com/image-vector/vector-seamless-pattern-paw-footprints-260nw-622830797.jpg");
         background-blend-mode:multiply;
         opacity : 140%;
@@ -42,7 +42,7 @@ div {
     font-family: 'Arapey';
     border-color: white;
     font-size: 19px;
-    color : maroon;
+    color : white;
     text-shadow: 2px 3px 4px black  ;
     display : flex;
     justify-content: space-around;
