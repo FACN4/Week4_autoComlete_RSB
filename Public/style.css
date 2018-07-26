@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Poiret+One|Arapey|Caveat");
 
 body {
+      border-style : solid;
+      border-color: black;
       background-image:url("http://www.f-covers.com/cover/funny-dog-4-facebook-cover-timeline-banner-for-fb.jpg");
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -20,6 +22,7 @@ div {
       display: flex;
       justify-content:center;
       padding-top : 40px ;
+      z-index:-1;
       }
 
 #inputBox{
@@ -27,24 +30,26 @@ div {
         width : 240px;
         height : 27px;
         border-color: white;
-        font-size: 19px;
+        font-size: 27px;
         font-style: normal;
         font-weight: bold;
         /* color:navy; */
         background-image:url("https://image.shutterstock.com/image-vector/vector-seamless-pattern-paw-footprints-260nw-622830797.jpg");
         background-blend-mode:multiply;
-        opacity : 10%;
+        opacity : 140%;
   }
   button{
     font-family: 'Arapey';
     border-color: white;
     font-size: 19px;
     color : white;
-    text-shadow: 1px 2px 4px black  ;
+    text-shadow: 2px 3px 4px black  ;
     display : flex;
     justify-content: space-around;
     font-style: normal;
     font-weight:bolder;
+    background-image:url("https://image.shutterstock.com/image-vector/vector-seamless-pattern-paw-footprints-260nw-622830797.jpg");
+    background-blend-mode:overlay;
   }
   h{
     font-size : 35px;
@@ -53,11 +58,14 @@ div {
     font-style: oblique;
   }
   #imgOfDog{
-    width : 290px;
+    width : 280px;
     height : 240px;
   }
 
 @media only screen and (min-width: 600px) {
+  body{
+        border-style: none;
+  }
   section{
         /* display: grid;
         grid-template-columns: 1fr 1fr 1fr; */
@@ -65,7 +73,7 @@ div {
         justify-content: center;
   }
   h{
-    font-size : 44px;
+    font-size : 60px;
   }
   div {
         padding-top : 100px ;
